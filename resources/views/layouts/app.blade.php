@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel Quickstart - Basic</title>
+    <title>Quidditch-Manager</title>
 
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
@@ -28,7 +28,7 @@
 <body id="app-layout">
 
 
-<-- barre de menu -->
+<!-- barre de menu -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -59,6 +59,14 @@
       </ul>
     </div>
   </div>
+</nav>
+
+<nav>
+    <a href = "match.php" class = "texteMenu"><div class = "boutonMenu">Match</div></a>
+    <a href = "actualite.php" class = "texteMenu"><div class = "boutonMenu">Actualité</div></a>
+    <a href = "statistiques.php" class = "texteMenu"><div class = "boutonMenu">Statistiques des joueurs</div></a>
+    <a href = "entrainement.php" class = "texteMenu"><div class = "boutonMenu">Entraînement</div></a>
+    <a href = "reglages.php" class = "texteMenu"><div class = "boutonMenu">Réglages</div></a>
 </nav>
 
     @yield('content')
