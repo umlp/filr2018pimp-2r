@@ -30,51 +30,21 @@
 
 <!-- barre de menu -->
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Liste de tâches</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
+    <img / id="logo" src="../images/logo.png" alt"logo">
+    <p class = "titrePage">Statistiques</p>
+    <a href = "../php/connexion.php" class = "texteMenu">
+        <div class = "boutonMenu" id = "boutonConnexion">
+            Se connecter
+        </div>
+    </a>
 </nav>
 
-<img / id="logo" src="../images/logo.png" alt"logo">
-<p class = "titrePage">Statistiques</p>
-<a href = "../php/connexion.php" class = "texteMenu">
-  <div class = "boutonMenu" id = "boutonConnexion">
-    Se connecter
-  </div>
-</a>
-
-<nav class="navbar navbar-inverse">
-    <a href = "match.php" class = "texteMenu"><div class = "boutonMenu">Match</div></a>
-    <a href = "actualite.php" class = "texteMenu"><div class = "boutonMenu">Actualité</div></a>
-    <a href = "statistiques.php" class = "texteMenu"><div class = "boutonMenu">Statistiques des joueurs</div></a>
-    <a href = "entrainement.php" class = "texteMenu"><div class = "boutonMenu">Entraînement</div></a>
-    <a href = "reglages.php" class = "texteMenu"><div class = "boutonMenu">Réglages</div></a>
+<nav class="nav flex-column">
+    <a href = "match.php" class = "texteMenu"><div class = "nav-link disabled">Match</div></a>
+    <a href = "actualite.php" class = "texteMenu"><div class = "nav-link disabled">Actualité</div></a>
+    <a href = "statistiques.php" class = "texteMenu"><div class = "nav-link active">Statistiques des joueurs</div></a>
+    <a href = "entrainement.php" class = "texteMenu"><div class = "nav-link disabled">Entraînement</div></a>
+    <a href = "reglages.php" class = "texteMenu"><div class = "nav-link disabled">Réglages</div></a>
 </nav>
 
     @yield('content')
