@@ -1,4 +1,6 @@
-@section('content')
+@extends('layouts.app')
+
+
     <div class="container">
         <div class="col-sm-offset-2 col-sm-8">
             <header>
@@ -48,4 +50,4 @@
             </nav>
         </div>
     </div>
-@endsection
+
