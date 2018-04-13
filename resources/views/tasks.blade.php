@@ -5,8 +5,9 @@
         <div class="col-sm-offset-2 col-sm-8">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    Bonjour JF, Bonjour Corentin
+                    New Task
                 </div>
+                <h1> BONJOUR </h1>
 
                 <div class="panel-body">
                     <!-- Display Validation Errors -->
