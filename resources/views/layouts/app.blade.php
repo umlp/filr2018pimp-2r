@@ -69,7 +69,7 @@
   </div>
 </a>
 
-<nav>
+<nav class="navbar navbar-dark bg-dark">
     <a href = "match.php" class = "texteMenu"><div class = "boutonMenu">Match</div></a>
     <a href = "actualite.php" class = "texteMenu"><div class = "boutonMenu">Actualité</div></a>
     <a href = "statistiques.php" class = "texteMenu"><div class = "boutonMenu">Statistiques des joueurs</div></a>
