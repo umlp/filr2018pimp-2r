@@ -14,6 +14,40 @@
                     </div>
                 </a>
             </header>
+            
+            <nav>
+                <a href = "../php/match.php" class = "texteMenu">
+                    <div class = "boutonMenu">
+                        Match
+                    </div>
+                </a>
+
+
+                <a href = "../php/actualite.php" class = "texteMenu">
+                    <div class = "boutonMenu">
+                        Actualité
+                    </div>
+                </a>
+
+                <a href = "../php/statistiques.php" class = "texteMenu">
+                    <div class = "boutonMenu">
+                        Statistiques des joueurs
+                    </div>
+                </a>
+
+
+                <a href = "../php/entrainement.php" class = "texteMenu">
+                    <div class = "boutonMenu">
+                        Entraînement
+                    </div>
+                </a>
+
+                <a href = "../php/reglages.php" class = "texteMenu">
+                    <div class = "boutonMenu">
+                        Réglages
+                    </div>
+                </a>
+            </nav>
         </div>
     </div>
 @endsection
