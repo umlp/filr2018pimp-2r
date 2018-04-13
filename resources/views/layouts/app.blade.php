@@ -61,6 +61,14 @@
   </div>
 </nav>
 
+<img / id="logo" src="../images/logo.png" alt"logo">
+<p class = "titrePage">Statistiques</p>
+<a href = "../php/connexion.php" class = "texteMenu">
+  <div class = "boutonMenu" id = "boutonConnexion">
+    Se connecter
+  </div>
+</a>
+
 <nav>
     <a href = "match.php" class = "texteMenu"><div class = "boutonMenu">Match</div></a>
     <a href = "actualite.php" class = "texteMenu"><div class = "boutonMenu">Actualité</div></a>
