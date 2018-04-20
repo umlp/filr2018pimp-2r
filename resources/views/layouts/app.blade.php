@@ -18,6 +18,7 @@
     <style>
         body {
             font-family: 'Lato';
+            padding-top: 70px;
         }
 
         .fa-btn {
@@ -30,8 +31,14 @@
 
 <!-- barre de menu -->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     Petit test
+  </div>
+  <div class="container-fluid">
+    Petit test 2
+  </div>
+  <div class="container-fluid">
+    Petit test 3
   </div>
 </nav>
 
