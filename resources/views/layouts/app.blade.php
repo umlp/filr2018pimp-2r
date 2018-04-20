@@ -30,37 +30,10 @@
 
 
 <!-- barre de menu -->
-<div class="page-header">
-  <h1>Example page header <small>Subtext for header</small></h1>
-</div>
-
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">LOGO</a>
+    <div class="page-header">
+      <h1>Example page header <small>Subtext for header</small></h1>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Se connecter<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Se connecter</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">S'inscrire</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
 </nav>
 
 <nav class="nav flex-column">
