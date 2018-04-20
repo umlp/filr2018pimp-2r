@@ -27,26 +27,20 @@
     </style>
 </head>
 <body id="app-layout">
-
-
-<!-- barre de menu -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="col-lg-3 col-lg-offset-1">
-        <div class="page-header">
-          <h1>Example page header <small>Subtext for header</small></h1>
-        </div>
-    </div>
-</nav>
-
-
-<nav class="nav flex-column">
-    <a href = "match.php" class = "texteMenu"><div class = "nav-link disabled">Match</div></a>
-    <a href = "actualite.php" class = "texteMenu"><div class = "nav-link disabled">Actualité</div></a>
-    <a href = "statistiques.php" class = "texteMenu"><div class = "nav-link active">Statistiques des joueurs</div></a>
-    <a href = "entrainement.php" class = "texteMenu"><div class = "nav-link disabled">Entraînement</div></a>
-    <a href = "reglages.php" class = "texteMenu"><div class = "nav-link disabled">Réglages</div></a>
-</nav>
-
+    
+    <header>
+        <img src="logo.png" alt="logo"/>
+        <div class="titre">Statistiques</div>
+    </header>
+    
+    <nav class="Menu vertical">
+        <a href = "match.php" class = "texteMenu"><div class = "nav-link disabled">Match</div></a>
+        <a href = "actualite.php" class = "texteMenu"><div class = "nav-link disabled">Actualité</div></a>
+        <a href = "statistiques.php" class = "texteMenu"><div class = "nav-link active">Statistiques des joueurs</div></a>
+        <a href = "entrainement.php" class = "texteMenu"><div class = "nav-link disabled">Entraînement</div></a>
+        <a href = "reglages.php" class = "texteMenu"><div class = "nav-link disabled">Réglages</div></a>
+    </nav>
+    
     @yield('content')
 
     <!-- JavaScripts -->
