@@ -31,10 +31,13 @@
 
 <!-- barre de menu -->
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="page-header">
-      <h1>Example page header <small>Subtext for header</small></h1>
+    <div class="col-lg-3 col-lg-offset-1">
+        <div class="page-header">
+          <h1>Example page header <small>Subtext for header</small></h1>
+        </div>
     </div>
 </nav>
+
 
 <nav class="nav flex-column">
     <a href = "match.php" class = "texteMenu"><div class = "nav-link disabled">Match</div></a>
