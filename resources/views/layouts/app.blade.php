@@ -29,14 +29,10 @@
 
 
 <!-- barre de menu -->
-<nav class="navbar navbar-inverse">
-    <img / id="logo" src="../images/logo.png" alt"logo">
-    <p class = "titrePage">Statistiques</p>
-    <a href = "../php/connexion.php" class = "texteMenu">
-        <div class = "boutonMenu" id = "boutonConnexion">
-            Se connecter
-        </div>
-    </a>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    Petit test
+  </div>
 </nav>
 
 <nav class="nav flex-column">
