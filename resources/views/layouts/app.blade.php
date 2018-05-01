@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Quidditch-Manager</title>
+    <title>QuidditchManager - Statistiques</title>
 
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
@@ -18,28 +18,135 @@
     <style>
         body {
             font-family: 'Lato';
-            padding-top: 70px;
         }
 
         .fa-btn {
             margin-right: 6px;
         }
+        header {
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  top: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  width: 16.5%;
+  border: 2px solid black;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 26px;
+}
+
+.titre {
+  display: inline-block;
+  width: 82%;
+  border: 2px solid black;
+  text-align: center;
+}
+
+nav {
+  padding-top: 80px;
+  width: 16.5%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  list-style: none;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  text-align: center;
+}
+
+main {
+  margin-left: 16.98%;
+  width: 82%;
+  margin-top: -400px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+article {
+  margin: 5px;
+  background-color: DarkGray;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  line-height: 35px;
+}
+
+h3, h2 {
+  text-align: center;
+}
+
+aside {
+  float: left;
+  border: 2px solid black;
+  padding-bottom: 130px;
+  padding-right: 70px;
+  margin-right: 5px;
+}
+
+.en-tete {
+  border-bottom: 2px solid black;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#resume {
+  display: inline-block;
+  width: 25%;
+  background-color: DimGray;
+}
+
+#editer {
+  position: relative;
+  right: -75%;
+}
+
+#dernier-match {
+  display: inline-block;
+  width: 70%;
+}
+
+#stats-joueur, #stats-equipe, #stats-globales {
+  display: inline-block;
+  width: 30.9%;
+}
+
+#col-1, #col-2, #col-3 {
+  display: inline-block;
+  width: 32%;
+}
+
     </style>
 </head>
 <body id="app-layout">
     
     <header>
-        <img src="logo.png" alt="logo"/>
-        <div class="titre">Statistiques</div>
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <div class="titre">
+        <h1>Statistiques</h1>
+      </div>
     </header>
-    
-    <nav class="Menu vertical">
-        <a href = "match.php" class = "texteMenu"><div class = "nav-link disabled">Match</div></a>
-        <a href = "actualite.php" class = "texteMenu"><div class = "nav-link disabled">Actualité</div></a>
-        <a href = "statistiques.php" class = "texteMenu"><div class = "nav-link active">Statistiques des joueurs</div></a>
-        <a href = "entrainement.php" class = "texteMenu"><div class = "nav-link disabled">Entraînement</div></a>
-        <a href = "reglages.php" class = "texteMenu"><div class = "nav-link disabled">Réglages</div></a>
-    </nav>
     
     @yield('content')
 
