@@ -90,9 +90,7 @@ h3, h2 {
 
 aside {
   float: left;
-  border: 2px solid black;
-  padding-bottom: 130px;
-  padding-right: 70px;
+  margin-top: 5px;
   margin-right: 5px;
 }
 
