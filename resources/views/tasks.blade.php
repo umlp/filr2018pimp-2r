@@ -39,7 +39,7 @@
       <section>
         <article id="resume">
           <aside>
-            <img src="Diggory.png" alt="photo1">
+            <img src="ressources/views/Diggory.png" alt="photo1">
           </aside>
           Nom : Diggory <br>
           Prénom : Cédric <br>
