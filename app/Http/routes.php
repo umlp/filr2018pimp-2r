@@ -11,23 +11,23 @@
 |
 */
 
-use App\Joueur;
+use App\Task;
 use Illuminate\Http\Request;
 
 Route::group(['middleware' => ['web']], function () {
     /**
-     * Show Joueur Dashboard
+     * Show Task Dashboard
      */
     Route::get('/', function () {
-        return view('joueurs', [
-            'joueurs' => Joueur::orderBy('created_at', 'asc')->get()
+        return view('tasks', [
+            'tasks' => Task::orderBy('created_at', 'asc')->get()
         ]);
     });
 
     /**
-     * Add New Joueur
+     * Add New Task
      */
-    Route::post('/joueur', function (Request $request) {
+    Route::post('/task', function (Request $request) {
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:255',
         ]);
@@ -38,9 +38,9 @@ Route::group(['middleware' => ['web']], function () {
                 ->withErrors($validator);
         }
 
-        $joueur = new Joueur;
-        $joueur->name = $request->name;
-        $joueur->save();
+        $task = new Task;
+        $task->name = $request->name;
+        $task->save();
 
         return redirect('/');
     });
