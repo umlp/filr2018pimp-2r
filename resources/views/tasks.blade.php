@@ -13,7 +13,7 @@
 
     <main>
       <section class="en-tete">
-        <form action="#" method="post">
+        <form action="task" method="post">
           <label for="#equipe">Équipe : </label>
           <select id="equipe" name="equipe">
             <option>Griffondor</option>
@@ -22,7 +22,7 @@
             <option>Serpentard</option>
           </select>
           <label for="#joueur">Joueur : </label>
-          <select id="joueur" name="joueur">
+          <select id="joueur" name="name">
             <option>01 - Cedric Diggory</option>
             <option>02 - Olivier Dubois</option>
             <option>03 - Angelina Jonhson</option>
@@ -103,4 +103,17 @@
         </article>
       </section>
     </main>
+    
+    @foreach ($tasks as task)
+        <tr>
+            <td class="table-text"><div>{{$task->name}}</div></td>
+            <td>
+                <form action="{{url('task/'.$task->id}}" method="POST>
+                    {{csfr_field}}
+                    {{method_field('DELETE')}}
+                </form>
+            </td>
+        </tr>
+     @endforeach
+    
 @endsection
