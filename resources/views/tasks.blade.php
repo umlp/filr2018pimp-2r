@@ -104,16 +104,4 @@
       </section>
     </main>
     
-    @foreach ($tasks as task)
-        <tr>
-            <td class="table-text"><div>{{$task->name}}</div></td>
-            <td>
-                <form action="{{url('task/'.$task->id}}" method="POST>
-                    {{csfr_field}}
-                    {{method_field('DELETE')}}
-                </form>
-            </td>
-        </tr>
-     @endforeach
-    
 @endsection
